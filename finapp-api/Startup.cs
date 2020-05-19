@@ -38,7 +38,7 @@ namespace finapp_api
                 options.UseMySql(connection)
             );
             services.AddCors();
-            services.AddControllers();
+            services.AddControllers(); 
 
             //Security
             var key = Encoding.ASCII.GetBytes(Settings.Key);
